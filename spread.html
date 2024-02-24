@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>spread</title>
+</head>
+<body>
+  <script>
+
+    let front = ['react', 'js', 'css'];
+    let back = ['python', 'nodejs'];
+
+    console.log([...'teste']); // <- vai imprimir 5 arrays, 1 array pra cada letra
+    console.log(...front);
+
+    let fullStack = [...front, 'angular', ...back]; // <- vai concatenar 2 arrays e adicionar mais 1 string no meio
+
+    console.log(fullStack);
+  </script>
+</body>
+</html>

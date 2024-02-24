@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Find()</title>
+</head>
+<body>
+    <script>
+
+        const pizzas = [
+            'mussarela',
+            'calabresa',
+            'marguerita',
+            'manjericão'
+        ]
+
+        const foundPizzas = pizzas.find(p => p.startsWith('m'))
+        console.log(foundPizzas)
+
+
+        const fruits = [
+
+            {name: 'jabuticaba', id: 1},
+            {name: 'laranja', id: 2},
+            {name: 'acerola', id: 3},
+            {name: 'manga', id: 4},
+            
+        ]
+        const foundFruits = fruits.find( fruit => fruit.id > 2 )
+        console.log(foundFruits)
+
+
+        const numbers = [2,3,4,5,6,7,8,9]
+        const findNumber = numbers.find(x => x > 4)
+        console.log(findNumber);
+    </script>
+</body>
+</html>

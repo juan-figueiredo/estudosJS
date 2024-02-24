@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>map()</title>
+</head>
+<body>
+    <script>
+        
+        const numbers = [12,34,56,78,90,67,34,531,3235,515157];
+
+        const doubledNumbers = numbers.map( num => num * 2 )
+
+        console.log(doubledNumbers)
+
+        //converter fahrenheit para celsius
+
+        const fahrenheit = [0, 32, 45, 50, 75]
+        const celsius = fahrenheit.map( elemento => Math.round ((elemento - 32)  * 5/9 ))
+
+        console.log(celsius)
+
+        //transformando letras minúsculas em maiúsculas
+
+        const nomesMinusculos = ['cabritinho', 'jaime', 'canu']
+        const nomesMaiusculos = nomesMinusculos.map(nome => nome.toUpperCase());
+        console.log(nomesMaiusculos)
+        
+    </script>
+</body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>reduce()</title>
+</head>
+<body>
+    <script>
+        
+        const numbers = [12,34,56,78,90,67,34,531,3235,515157];
+
+        const totalNumbers = numbers.reduce((valorAnterior, valorAtual) => valorAnterior + valorAtual, 0 )
+
+        console.log(totalNumbers)
+
+        
+        // exemplo com array de objetos:
+
+
+        const tabelaBrasileirao = [
+            {time: 'Bahia', gols: 56},
+            {time: 'Palmeiras', gols: 55},
+            {time: 'Santos', gols: 30},
+            {time: 'Vasco', gols: 12},
+            {time: 'XV de piracicaba', gols: 3},
+            {time: 'Goias', gols: 22},
+            {time: 'São Paulo', gols: 24},
+            {time: 'Corinthians', gols: 1},
+
+        ]
+
+        const totalDeGols = tabelaBrasileirao.reduce((valor, valor2) => valor + valor2.gols, 0)
+        console.log(totalDeGols)
+        
+        
+    </script>
+</body>
+</html>

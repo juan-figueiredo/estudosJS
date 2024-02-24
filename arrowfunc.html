@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>arrowFunction => </title>
+</head>
+<body>
+    <script>
+
+        const comidas = ["Parmeggiana", "Lasanha", "Churrasco"];
+
+        const love = comidas.map( function (nome) {
+            return `Eu amo ${nome}!`
+        });
+
+        //transformando em arrowfunc => 
+
+        const loveFood = comidas.map( (nome) => {
+            return `Eu amo ${nome}!`
+        });
+
+        
+        //Simplificando a arrowfunc
+        
+        const loveFoodSingle = comidas.map(nome => {
+            return `Eu amo ${nome}!`
+        });
+
+        //Deixando a arrowFunc em uma única linha
+
+        const oneLine = comidas.map ( nome => `Eu amo ${nome}!` );
+        
+        console.log(oneLine);
+
+    </script>
+</body>
+</html>

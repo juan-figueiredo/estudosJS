@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>appendChild()</title>
+</head>
+<body>
+
+<div id="pai">
+
+<!-- o appendChild entraria aqui dentro da div pai -->
+
+</div>
+
+<div id="copo">
+    
+    <!-- o appendChild entraria aqui dentro da div pai -->
+
+</div>
+
+</div>
+
+    <script>
+        
+        const p = document.createElement("p");
+        p.innerHTML = "Olá";
+
+        document.getElementById("pai").appendChild(p)
+
+
+
+        const water = document.createElement('p');
+        water.innerHTML = 'Água';
+
+        document.getElementById('copo').appendChild(water);
+
+        
+    </script>
+</body>
+</html>

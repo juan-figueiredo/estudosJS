@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Promise</title>
+</head>
+<body>
+
+    <script>
+
+        onMount();
+
+        const loading = document.getElementById('loading')
+
+        loading.style.display = 'block'
+        
+        async function onMount(){
+
+            try{
+                
+                const response = await getPost();
+
+            } catch (error) {
+
+                console.log('Entrou no erro', error);
+
+            } finally{
+
+                loading.style.display = 'none'
+            }
+        }
+
+        function getPost(callback){
+
+            return new Promise((resolve, reject) => {
+                setTimeout(() => {
+                resolve('Deu ruim')
+            }, 1000)
+
+            })
+        }
+
+        
+    </script>
+
+</body>
+</html>

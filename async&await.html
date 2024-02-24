@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <title>async e await</title>
+</head>
+<body>
+
+    <p id="result"></p><br>
+
+
+
+    <script>
+
+        async function buscarInfo(username){
+            try{
+                
+                const resposta = await fetch(`https://api.example.com/usuarios/${username}`);
+
+                const dados = await resposta.json();
+
+                //exibir
+
+                console.log(`Nome: ${dados.nome}`);
+                console.log(`Email: ${dados.email}`);
+
+            }catch{
+                console.error('Erro ao buscar infos', error)
+            }
+        }
+
+        buscarInfo('Juan');
+
+    </script>
+</body>
+</html>

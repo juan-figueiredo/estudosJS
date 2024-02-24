@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>filter()</title>
+</head>
+<body>
+
+    <input type="sele">
+    <script>
+        
+        const nomeCompleto = [
+    {name: 'Juan'},
+    {name: 'Figueiredo'},
+    {name: 'Arruda'},
+];
+
+
+const meuNovoArray = nomeCompleto.filter((valorAtual) => {
+    return valorAtual.name.includes('u')
+});
+
+console.log(meuNovoArray)
+
+
+// outro exemplo
+
+
+    const newArray = [
+        {id: 1, nome: 'Jean', idade: 21},
+        {id: 2, nome: 'Pedro', idade: 23},
+        {id: 4, nome: 'Ana', idade: 24},
+        {id: 5, nome: 'Jef', idade: 25},
+    ]
+
+
+    const filterArray = newArray.filter((valorAtual) => {
+        return valorAtual.idade === 23;
+    });
+
+    console.log(filterArray);   
+
+    </script>
+</body>
+</html>

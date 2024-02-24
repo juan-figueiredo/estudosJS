@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Promises</title>
+</head>
+<body>
+    <script>
+
+      var defer = new Promise((resolve, reject) => {
+        setTimeout(() => {
+
+          if (true){
+            resolve("It's working =] ")
+          } else {
+            reject("It's not working =[ ")
+          }
+        }, 2000)
+      });
+
+      defer.then((data) => console.log(data))
+            .catch((error) => console.log(error))
+      
+      
+      // usando promises na pratica
+
+      var posts = fetch ('https://willianjusten.com.br/search.json');
+
+      console.log(posts);
+    </script>
+</body>
+</html>

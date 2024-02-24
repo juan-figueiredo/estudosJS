@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>replace</title>
+</head>
+<body>
+
+    <p id="dia">O dia está chuvoso</p>
+
+    <script>
+
+        var day = document.getElementById('dia')
+        var newDay = day.innerHTML.replace('chuvoso', 'ensolarado')
+        day.innerHTML = newDay
+
+        //
+
+        var frase = 'Hoje vou almoçar parmeggiana'
+        var novaFrase = frase.replace('parmeggiana', 'lasanha')
+        console.log(novaFrase);
+
+    </script>
+</body>
+</html>

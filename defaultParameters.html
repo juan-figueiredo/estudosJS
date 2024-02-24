@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Default Parameters</title>
+
+</head>
+
+<style>
+
+    .green{
+        color: green;
+        font-size: 25px;
+    }
+
+</style>
+
+<body>
+
+    <h1 id="teste"></h1>
+
+    <script>
+
+        function hello (name = 'Juan', surname = 'Figueiredo'){
+            console.log(`Hello ${name} ${surname}, how are you?`);
+        }        
+
+        hello()
+
+    </script>
+</body>
+</html>

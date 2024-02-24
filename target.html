@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <title>target</title>
+</head>
+<body>
+
+    <h1 id="h1">Clique aqui</h1><br>
+    <h2 id="h2">Clique aqui</h2><br>
+    <div id="div">Clique aqui</div><br>
+    <span id="span">Clique aqui</span><br>
+    
+    <p id="result"></p><br>
+
+
+
+    <script>
+        
+        $(document).click((event) => {
+            $("#result").text('O objeto clicado foi o: ' + event.target.tagName)
+        })
+
+    </script>
+</body>
+</html>

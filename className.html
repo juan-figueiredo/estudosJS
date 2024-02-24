@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>className</title>
+
+    <style>
+
+        .teste2 {
+            color: red;
+        }
+
+        .teste3{
+            background-color: blue;
+        }
+
+        .teste4{
+            text-align: center;
+            
+        }
+
+        .teste5{
+            padding: 1rem;
+        }
+    </style>
+</head>
+<body>
+
+    <h1 id="teste">Teste</h1>
+
+    <script>
+
+        //alterando class com ClassName
+        
+        let takeClass = document.getElementById("teste")
+        
+        takeClass.className = 'teste2'
+
+        console.log(takeClass);
+        
+
+        //classList (add)
+
+        takeClass.classList.add('teste3')
+        takeClass.classList.add('teste4')
+        takeClass.classList.add('teste5')
+
+        //removendo class
+
+        takeClass.classList.remove('teste3')
+    </script>
+</body>
+</html>

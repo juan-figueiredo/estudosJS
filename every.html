@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>every()</title>
+</head>
+<body>
+    <script>
+        
+        const randomNumbers= [ 11,20,25,44 ];
+
+        const verifyNumbers = randomNumbers.every( n => n > 10)
+        console.log(verifyNumbers)
+
+        //----------- verificar se todos são maiores de idade ------------//
+
+        const dadosDaTurma = [
+
+            { id:1, nome: 'Bárbara', idade: 19},
+            { id:2, nome: 'Carla', idade: 18},
+            { id:3, nome: 'Pedro', idade: 18},
+            { id:4, nome: 'Antonio', idade: 18},
+            { id:5, nome: 'Samara', idade: 20},
+            { id:6, nome: 'Diego', idade: 18},
+            
+        ]
+
+        const verifyStudents = dadosDaTurma.every ( dados => dados.idade >= 18)
+        console.log(verifyStudents)
+
+
+    </script>
+</body>
+</html>

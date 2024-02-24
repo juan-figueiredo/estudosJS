@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>findIndex()</title>
+</head>
+<body>
+    <script>
+        const numbers = [ 2,4,5,6,8,99 ]
+
+        const foundNumbers = numbers.findIndex(x => x > 8)
+        console.log(foundNumbers);
+
+        // com array de objetos
+
+        const dadosMatricula = [
+
+            {nome: 'carlos', idade: 25, turno: 'noturno'},
+            {nome: 'beatriz', idade: 22, turno: 'vespertino'},
+            {nome: 'joão', idade: 23, turno: 'noturno'},
+            {nome: 'ana', idade: 21, turno: 'matutino'},
+            {nome: 'pedro', idade: 26, turno: 'noturno'},
+            {nome: 'patricia', idade: 25, turno: 'noturno'}
+            
+        ]
+
+        const verifyStudents = dadosMatricula.findIndex(idade => idade.idade >= 26);
+        console.log(verifyStudents)
+
+
+        // outro exemplo
+
+
+        const matricula = [
+
+            {nome: 'Celin', id: 1},
+            {nome: 'Magneto', id: 2},
+            {nome: 'Jacinto', id: 3},
+            {nome: 'Perera', id: 4},
+            {nome: 'Nicole', id: 5}
+
+        ]
+
+        const verifyId = matricula.findIndex( id => id.id >= 3);
+        console.log(verifyId );
+
+    </script>
+</body>
+</html>

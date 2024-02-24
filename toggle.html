@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>toggle</title>
+    <style>
+        #container{
+            width: 200px;
+            height: 200px;
+            background-color: red;
+        }
+        #container-b{
+            width: 200px;
+            height: 200px;
+            background-color: rgb(0, 26, 255);
+        }
+
+        .hide{
+            display: none;
+        }
+    </style>
+</head>
+<body>
+
+    <div id="container"></div>
+    <button id="btn">Alterar</button>
+    <div id="container-b"></div>
+    <button id="btn-b">Alterar</button>
+
+
+    <script>
+        var btn = document.getElementById('btn')
+        
+        btn.addEventListener('click', function(){
+            var container = document.getElementById('container')
+            if(container.style.display === 'none'){
+                container.style.display = 'block';
+            }else{
+                container.style.display = 'none'
+            }
+            
+        });
+
+
+        //fazendo o mesmo com toggle
+
+        const btnb = document.getElementById('btn-b');
+        btnb.addEventListener('click', function() {
+            const containerB = document.getElementById('container-b');
+            containerB.classList.toggle('hide')
+        })
+
+        
+    </script>
+</body>
+</html>
